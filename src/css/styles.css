@@ -5,11 +5,11 @@
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
-    width: 100%;
+    width: 50%;
+    height: 400px;
     border: 10px solid black;
 }
 .cloud{
-    border: 5px solid blue;
-    width: 100%;
-    background-image: url('../images/cloud/nube.svg');
+    border: 5px solid blue;    
+    background-image: url("../images/cloud/nube.svg");
 }
