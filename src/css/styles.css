@@ -3,13 +3,23 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	align-content: stretch;
-    width: 50%;
+    width: 70%;
     height: 400px;
     border: 10px solid black;
+    overflow: hidden;
 }
 .cloud{
-    border: 5px solid blue;    
-    background-image: url("../images/cloud/nube.svg");
+    border: 5px solid blue;   
+    background: url("../images/cloud/nube.svg")  50% 100px no-repeat fixed;
+        background-size: cover;
+        height:600px
+       
+    
+}
+.cloud img{
+    /* position: relative; */
+    
+    width: 10%;
 }
