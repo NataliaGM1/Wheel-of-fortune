@@ -1,0 +1,15 @@
+#section_cloud{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    width: 100%;
+    border: 10px solid black;
+}
+.cloud{
+    border: 5px solid blue;
+    width: 100%;
+    background-image: url('../images/cloud/nube.svg');
+}
