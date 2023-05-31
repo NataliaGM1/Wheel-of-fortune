@@ -1,20 +1,28 @@
 #section_cloud{
     display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
-	align-items: flex-start;
-	align-content: stretch;
+	align-items: stretch;
+	align-content: center;
     width: 70%;
     height: 400px;
     border: 10px solid black;
+    position: relative;
     overflow: hidden;
 }
 .cloud{
     border: 5px solid blue;   
-    background: url("../images/cloud/nube.svg")  50% 100px no-repeat fixed;
-        background-size: cover;
-        height:600px
+    background: url("../images/cloud/nube.svg")  0% 0% no-repeat ;
+        /* background-size: cover; */
+        flex:1;
+        position: fixed;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
        
     
 }
