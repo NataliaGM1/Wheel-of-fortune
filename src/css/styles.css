@@ -37,5 +37,19 @@
 .cloud img{
     /* position: relative; */
     
-    width: 10%;
+    width: 100%;
+}
+.cloudEl{
+    position: relative;
+    width: 500px;
+    height: 100%;
+    border: 2px solid green;
+}
+.itemEl{
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 20%;
+    border: 2px solid red;
+  
 }
