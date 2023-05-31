@@ -1,3 +1,4 @@
+alert("fichero cloud.js");
 class NameCloud {
   constructor(container, texts) {
     alert("dentro del constructor");
@@ -28,7 +29,7 @@ class NameCloud {
 createCloud();
 function createCloud() {
   const textNames = getNames();
-  const cloudContainer = getCloudElement();
+  const cloudContainer = getContainerElement();
   const namesCloud = new NameCloud(cloudContainer, textNames);
 }
 function getNames() {
@@ -46,13 +47,8 @@ function getNames() {
   return names;
 }
 
-function getCloudElement() {
+function getContainerElement() {
   const element = document.getElementById("cloud");
   return element;
 }
-function addItemsTo(items, cloud) {
-  for (let item of items) {
-    const node = document.createElement("div");
-    cloud.appendChild(node);
-  }
-}
+
