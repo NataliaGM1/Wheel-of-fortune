@@ -1,5 +1,3 @@
 function mostrarAlerta() {
-    var alerta = document.getElementById("customAlert");
-    alerta.style.display = "block";
-  }
-  
+  alert("¡Te ha tocado la pelota estas Eliminado!");
+}
