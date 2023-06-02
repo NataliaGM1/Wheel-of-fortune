@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whell of Fortune</title>
-</head>
-<body>
+    <title>Whell of Beach</title>
+    <script src="/src/js/insert.js"></script>
+    <link rel="stylesheet" href="/src/css/insert.css">
+  <body>
+
+      <form id="formulario">
+        <label for="nombre"></label>
+        <input type="text" id="nombre" required placeholder="Nombre Del Jugador Aquí">
+        <button class="update" type="button" onclick="agregarJugador()">Actualizar</button>
+      </form>
+    
+      <ul id="lista-jugadores"></ul>
     
 </body>
 </html>
