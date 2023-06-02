@@ -1,0 +1,34 @@
+.search-container {
+    display: flex;
+    align-items: center;
+  
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px; /* Borde redondeado en el lado izquierdo */
+      font-size: 16px;
+      flex: 1;
+    }
+  
+    button {
+      padding: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      border-radius: 0 5px 5px 0; /* Borde redondeado en el lado derecho */
+      margin-left: -1px; /* Ajuste de alineación con el campo de entrada */
+      cursor: pointer;
+  
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
