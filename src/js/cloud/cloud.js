@@ -1,4 +1,4 @@
-alert("fichero cloud.js");
+// alert("fichero cloud.js");
 class NameCloud {
 
   constructor(container, texts) {
@@ -11,7 +11,7 @@ class NameCloud {
     self.indexOfName = 0;
     self.timeToRoll = 5000;
     self.createInnerCloud();    
-    self.start();
+    // self.start();
   }
   createInnerCloud() {
     const self = this;   

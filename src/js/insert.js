@@ -1,11 +1,33 @@
-import "./pp.js";
-
-const modal = document.querySelector("#modal_loupe");
-const btnModalOpen = document.querySelector("#btn-open_modal");
+const modal = document.querySelector("#modal_window");
+const btnModalOpen = document.querySelector("#btn_modal_open");
 btnModalOpen.addEventListener("click", ()=>modal.showModal());
-const btnModalClose = document.querySelector("btn_close_modal");
-btnModalClose.addEventListener("click", ()=>modal.closest());
+const btnModalClose = document.querySelector("#btn_modal_close");
+btnModalClose.addEventListener("click", ()=>modal.close());
 
+const textNames = getNames();
+const cloudContainer = getContainerElement();
+const cloudObject = new NameCloud(cloudContainer, textNames);
+
+function getNames() {
+  const names = [
+    "Juan",
+    "Carlos",
+    "Miguel",
+    "Jesus",
+    "Pedro",
+    "Michael",
+    "Pablo",
+    "Mateo",
+    "Santi",
+  ];
+  return names;
+}
+
+function getContainerElement() {
+  const element = document.getElementById("cloud");
+  return element;
+}
+cloudObject.start();
 // Array para almacenar la lista de jugadores
 let jugadores = [];
 
