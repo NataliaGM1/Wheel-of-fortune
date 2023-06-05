@@ -122,29 +122,4 @@ class NameCloud {
     elCloud.innerHTML = "";
   }
 }
-createCloud();
-function createCloud() {
-  const textNames = getNames();
-  const cloudContainer = getContainerElement();
-  const namesCloud = new NameCloud(cloudContainer, textNames);
-  // setInterval(function(){console.log("set interval")}, 500);
-}
-function getNames() {
-  const names = [
-    "Juan",
-    "Carlos",
-    "Miguel",
-    "Jesus",
-    "Pedro",
-    "Michael",
-    "Pablo",
-    "Mateo",
-    "Santi",
-  ];
-  return names;
-}
 
-function getContainerElement() {
-  const element = document.getElementById("cloud");
-  return element;
-}
