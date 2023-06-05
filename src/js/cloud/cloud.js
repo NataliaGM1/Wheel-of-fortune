@@ -20,7 +20,7 @@ class NameCloud {
     elCloud.className = "cloudEl";
     elCloud.id ="cloudNames";
     elCloud.style.position = "relative";
-    elCloud.innerText = "elCLoud";
+    // elCloud.innerText = "elCLoud";
 
     self.texts.forEach((text) => {
       const item = self.createTextItem(text);
@@ -38,9 +38,10 @@ class NameCloud {
     this.indexOfName = 0;
   }
   createTextItem(text) {
-    const itemEl = document.createElement("span");
+    const itemEl = document.createElement("div");
     itemEl.className = "itemEl";
     itemEl.style.position = "absolute";
+    itemEl.style.textAlign = "center";
     itemEl.innerText = text;
     itemEl.id = "NAME" + this.indexOfName;
     
@@ -65,9 +66,8 @@ class NameCloud {
   start(){
     self = this;
     // alert("start");
-    const cloudNames = document.getElementById("cloudNames");
-    
-    this.rolling();
+    const cloudNames = document.getElementById("cloudNames");    
+    this.rolling(this.getRandomNumber(3000,6000));
      
   }
   rolling (time) { 
@@ -81,8 +81,12 @@ class NameCloud {
 
     this.actualIndex = Math.floor(Math.random()*long); 
     const actualElement = document.getElementById("NAME" + this.actualIndex);    
-    actualElement.style.fontSize = "50px";   
-    setTimeout(()=> this.rolling(time), 100);    
+    actualElement.style.fontSize = "50px";
+    time-=100;
+    if(time>0){
+      setTimeout(()=> this.rolling(time), 100);  
+    }   
+      
   }
 
   addName(name){
