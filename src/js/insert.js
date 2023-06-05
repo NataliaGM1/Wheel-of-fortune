@@ -1,15 +1,15 @@
 // Array para almacenar la lista de jugadores
-var jugadores = [];
+let jugadores = [];
 
 // Función para agregar un jugador
 function agregarJugador() {
-  var nombreInput = document.getElementById('nombre');
-  var nombre = nombreInput.value;
+  let nombreInput = document.getElementById('nombre');
+  let nombre = nombreInput.value;
   
   // Verificar si el nombre no está vacío
   if (nombre !== '') {
     // Crear objeto jugador
-    var jugador = {
+    let jugador = {
       nombre: nombre
     };
     
@@ -35,7 +35,7 @@ function eliminarJugador(index) {
 
 // Función para editar un jugador
 function editarJugador(index) {
-  var nuevoNombre = prompt('Ingrese el nuevo nombre del jugador:');
+  let nuevoNombre = prompt('Ingrese el nuevo nombre del jugador:');
   
   // Verificar si se ingresó un nuevo nombre
   if (nuevoNombre !== null && nuevoNombre !== '') {
@@ -49,14 +49,14 @@ function editarJugador(index) {
 
 // Función para actualizar la lista de jugadores en el HTML
 function actualizarListaJugadores() {
-  var listaJugadores = document.getElementById('lista-jugadores');
+  let listaJugadores = document.getElementById('lista-jugadores');
   listaJugadores.innerHTML = '';
   
   // Recorrer el array de jugadores y crear elementos de lista para cada uno
-  for (var i = 0; i < jugadores.length; i++) {
-    var jugador = jugadores[i];
+  for (let i = 0; i < jugadores.length; i++) {
+    let jugador = jugadores[i];
     
-    var itemLista = document.createElement('div');
+    let itemLista = document.createElement('div');
     itemLista.innerHTML = jugador.nombre + ' ' +
       '<button onclick="eliminarJugador(' + i + ')">Eliminar</button>' +
       '<button onclick="editarJugador(' + i + ')">Editar</button>';
