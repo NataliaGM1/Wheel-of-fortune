@@ -1,4 +1,4 @@
-// alert("fichero cloud.js");
+alert("fichero cloud.js");
 class NameCloud {
 
   constructor(container, texts) {

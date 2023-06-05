@@ -1,3 +1,11 @@
+import "./pp.js";
+
+const modal = document.querySelector("#modal_loupe");
+const btnModalOpen = document.querySelector("#btn-open_modal");
+btnModalOpen.addEventListener("click", ()=>modal.showModal());
+const btnModalClose = document.querySelector("btn_close_modal");
+btnModalClose.addEventListener("click", ()=>modal.closest());
+
 // Array para almacenar la lista de jugadores
 let jugadores = [];
 

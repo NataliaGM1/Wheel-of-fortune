@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 <body>
-    <head>
-        <div class="title">
-            <h1>WHEEL OF BEACH</h1>
-        </div>
-    </head>
+    <header class="header">
+        <h1 class="title">PAgina</h1>
+      </header>
     <main>
         <section id="section_cloud">
             <div id="cloud">
@@ -20,11 +18,39 @@
                     <span class="itemEl"></span>
                 </div> -->
             </div>
+
         </section>
-    </main>
-    <footer>
+        <button id="btn_modal_open">open loupe modal</button>
+        <button id="btn_modal_close">close loupe modal</button>
+        <dialog open id="modal_loupe">
+            <form id="formulario">
+              <div class="n1">
+              <label for="nombre"></label>
+              <input class="name" type="text" id="nombre" required placeholder="Nombre Del Jugador Aquí">
+            </div>
+            <div class="u1">
+              <button class=update type="button" onclick="agregarJugador()">Actualizar</button>
+            </div>
+            </form>
+          
+            <ul id="lista-jugadores"></ul>
+        </dialog>
+        <div id="rectangle" class="hidden">
+            <h3 id="recinicio">Primero de todo te damos la bienvenida a la playa de la fortuna!</h3>
+            <h4 id="Idu">Instrucciones de uso</h4>
+            <p>
+              - Para agregar los nombres a la nube dale al boton de "Agregar Participantes"<br>
+              - Se te desplegara un menu que te permitira tanto editar, agregar como eliminar participantes.<br>
+              - Una vez estes conforme con la lista de participantes le das a "Comenzar"<br>
+            </p>
         
-    </footer>
-    <script src="../src/js/cloud/cloud.js"></script>
+        
+            </p>
+          </div>
+    </main>
+    <footer class="footer">
+        <button id="button">Sacar ventana</button>
+      </footer>
+    <script src="../src/js/qq.js"></script>
 </body>
 </html>
